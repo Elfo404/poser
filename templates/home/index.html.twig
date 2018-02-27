@@ -1,16 +1,47 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1 class="text-center" style="margin-top: 100px">Be a poser v3.0.0</h1>
 
-    <div class="text-center">
-        <a href="https://packagist.org/packages/pugx/badge-poser"><img src="https://poser.pugx.org/pugx/badge-poser/version"></a>
+    <a href="https://github.com/PUGX/badge-poser">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png">
+    </a>
+    
+    <div class="container">
+        <h1 class="text-center">Badge Poser</h1>
+        <h2 class="text-center">Pimp your README for PHP packages.</h2>
 
-        <a href="https://packagist.org/packages/pugx/badge-poser"><img src="https://poser.pugx.org/pugx/badge-poser/license"></a>
+        <div class="text-center">
+            <a href="https://packagist.org/packages/pugx/badge-poser">
+                <img src="https://poser.pugx.org/pugx/badge-poser/version">
+            </a>
+
+            <a href="https://packagist.org/packages/pugx/badge-poser">
+                <img src="https://poser.pugx.org/pugx/badge-poser/license">
+            </a>
+        </div>
+
+        <h3 class="text-center">Be a poser!</h3>
+        <p class="text-center">Use shields with your composer PHP repository, info and stats like how many times your project has been downloaded or its latest stable version, are taken from packagist. Enjoy. </p>
     </div>
 
+    <section class="container search text-center">
+        <h3 class="text-center">Show the markdown for your Badges</h3>
+        <select style="width:80%"></select>
+    </section>
+
+    <section class="results container" id="badges">
+        <h2>myrepo/lol
+        <a title="Permalink for phpunit/phpunit repository" href="#badges" class="headerlink">¶</a></h2>
+        <span>BADGE</span> <span>BADGE</span> <span>BADGE</span> <span>BADGE</span>
+        <button class="btn btn-primary" type="button">Copy</button>
+    </section>
+
+    {% include 'home/contributors.html.twig' %}
+
+    <section class="container-fluid footer">
+
+    </section>
+    
 {% endblock %}
 
-{% block javascripts %}
-
-{% endblock %}
+{% block javascripts %}{% endblock %}

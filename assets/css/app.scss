@@ -1,1 +1,51 @@
-@import "global";
+@import "_bootstrap-variables";
+@import "bootstrap";
+
+body{
+    background-color: #eee;
+    &,html{
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+.contributors{
+    .card-overlay{
+        position: absolute;
+        bottom:0;
+        color: #fff;
+        text-align: center;
+        width:100%;
+        background-color: rgba(0, 0, 0, .6);
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        border-top: 1px solid rgba(255, 255, 255, .1);
+        span{
+            margin: .4em 0;
+        }
+    }
+    a{
+        margin-top: 1.5em;
+        transition: margin .1s ease-in-out, box-shadow .2s ease-in-out;
+        .card{
+            overflow: hidden;
+            border: none;
+        }
+        &:hover{
+            margin-top:1.3em;
+            .card{
+                box-shadow: 0px 0px 12px -6px #000;
+            }
+        }
+    }
+} 
+
+
+section{
+    border-top: 1px solid #ddd;
+    padding: 2em 0 1em;
+}
+
+section.footer{
+
+}
