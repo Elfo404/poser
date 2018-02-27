@@ -30,10 +30,108 @@
     </section>
 
     <section class="results container" id="badges">
-        <h2>myrepo/lol
-        <a title="Permalink for phpunit/phpunit repository" href="#badges" class="headerlink">¶</a></h2>
-        <span>BADGE</span> <span>BADGE</span> <span>BADGE</span> <span>BADGE</span>
+
         <button class="btn btn-primary" type="button">Copy</button>
+
+
+        <button id="change">UPDATE</button>
+
+        <h2>
+            Badges for <span id="package-name">phpunit/phpunit</span>
+
+            <a title="Permalink for phpunit/phpunit" href="#badges">¶</a>
+        </h2>
+
+        <div class="badge-list">
+            <img class="badge" data-badge="badge-stable-version" src="https://poser.pugx.org/phpunit/phpunit/version">
+            <img class="badge" data-badge="badge-total-download" src="https://poser.pugx.org/phpunit/phpunit/downloads">
+            <img class="badge" data-badge="badge-unstable-version" src="https://poser.pugx.org/phpunit/phpunit/v/unstable">
+            <img class="badge" data-badge="badge-license" src="https://poser.pugx.org/phpunit/phpunit/license">
+            <img class="badge" data-badge="badge-composer-lock" src="https://poser.pugx.org/phpunit/phpunit/composerlock">
+
+            <button id="all-badges" data-clipboard-text="[![Latest Stable Version](https://poser.pugx.org/phpunit/phpunit/version)](https://packagist.org/packages/phpunit/phpunit) [![Latest Unstable Version](https://poser.pugx.org/phpunit/phpunit/v/unstable)](//packagist.org/packages/phpunit/phpunit) [![Total Downloads](https://poser.pugx.org/phpunit/phpunit/downloads)](https://packagist.org/packages/phpunit/phpunit) [![composer.lock available](https://poser.pugx.org/phpunit/phpunit/composerlock)](https://packagist.org/packages/phpunit/phpunit)">Copy</button>
+        </div>
+        <hr>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+
+                    <h4>Latest Stable Version</h4>
+                    <img class="badge" data-badge="badge-stable-version" src="https://poser.pugx.org/phpunit/phpunit/version">
+
+                    <input
+                        class="badge-input"
+                        data-badge="badge-stable-version"
+                        readonly
+                        type="text"
+                        value="">
+                    <button data-clipboard-target=".badge-input[data-badge='badge-stable-version']">Copy</button>
+
+                    <h4>Latest Unstable Version</h4>
+                    <img class="badge" data-badge="badge-unstable-version" src="https://poser.pugx.org/phpunit/phpunit/version">
+                    <input
+                        class="badge-input"
+                        data-badge="badge-unstable-version"
+                        readonly
+                        type="text"
+                        value="">
+                    <button data-clipboard-target=".badge-input[data-badge='badge-unstable-version']">Copy</button>
+
+                    <h4>License</h4>
+                    <img class="badge" data-badge="badge-license" src="https://poser.pugx.org/phpunit/phpunit/version">
+                    <input
+                        class="badge-input"
+                        data-badge="badge-license"
+                        readonly
+                        type="text"
+                        value="">
+                    <button data-clipboard-target=".badge-input[data-badge='badge-license']">Copy</button>
+
+                    <h4>Composer.lock available</h4>
+                    <img class="badge" data-badge="badge-composer-lock" src="https://poser.pugx.org/phpunit/phpunit/version">
+                    <input
+                        class="badge-input"
+                        data-badge="badge-composer-lock"
+                        readonly
+                        type="text"
+                        value="">
+                    <button data-clipboard-target=".badge-input[data-badge='badge-composer-lock']">Copy</button>
+                </div>
+
+                <div class="col-sm">
+                    <h4>Total downloads</h4>
+
+                    <img class="badge" data-badge="badge-total-download" src="https://poser.pugx.org/phpunit/phpunit/version">
+                    <input
+                        class="badge-input"
+                        data-badge="badge-total-download"
+                        readonly
+                        type="text"
+                        value="">
+                    <button data-clipboard-target=".badge-input[data-badge='badge-total-download']">Copy</button>
+
+                    <h4>Monthly downloads</h4>
+                    <img class="badge" data-badge="badge-monthly-download" src="https://poser.pugx.org/phpunit/phpunit/version">
+                    <input
+                        class="badge-input"
+                        data-badge="badge-monthly-download"
+                        readonly
+                        type="text"
+                        value="">
+                    <button data-clipboard-target=".badge-input[data-badge='badge-monthly-download']">Copy</button>
+
+                    <h4>Daily downloads</h4>
+                    <img class="badge" data-badge="badge-daily-download" src="https://poser.pugx.org/phpunit/phpunit/version">
+                    <input
+                        class="badge-input"
+                        data-badge="badge-daily-download"
+                        readonly
+                        type="text"
+                        value="">
+                    <button data-clipboard-target=".badge-input[data-badge='badge-daily-download']">Copy</button>
+                </div>
+            </div>
     </section>
 
     {% include 'home/contributors.html.twig' %}
