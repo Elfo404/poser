@@ -38,7 +38,7 @@ body{
             }
         }
     }
-} 
+}
 
 
 section{
@@ -47,5 +47,34 @@ section{
 }
 
 section.footer{
+}
 
+
+.tooltip {
+    position: absolute;
+    background: #FFC107;
+    color: black;
+    width: 80px;
+    border-radius: 3px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+    padding: 6px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.tooltip-arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    left: calc(50% - 5px);
+    margin-top: 0;
+    margin-bottom: 0;
+    position: absolute;
+    margin: 5px;
+    border-color: #FFC107;
+    border-width: 5px 5px 0 5px;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    bottom: -5px;
 }
