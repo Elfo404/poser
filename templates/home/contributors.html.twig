@@ -1,15 +1,20 @@
 
 
-<section class="container contributors">
-    <h2>Contributors</h2>
-    <div class="row">
-        <a href="#" class="col-3">
-            <div class="card bg-dark text-white">
-                <img class="card-img" src="https://avatars.githubusercontent.com/u/530406?v=3" alt="Card image">
-                <div class="card-overlay">
-                    <span>Very Long Nome Utente</span>
+<section class="container-fluid contributors">
+    <div class="container">
+        <h2>Contributors</h2>
+        <small>Thank you!</small>
+        <div class="row d-flex justify-content-around">
+            {% for i in 0..10%}
+            <a href="#" class="col-4 col-md-2">
+                <div class="card bg-dark text-white">
+                    <img class="card-img" src="https://avatars.githubusercontent.com/u/530406?v=3" alt="Card image">
+                    <div class="card-overlay">
+                        <span>Very Long Nome Utente</span>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
+            {% endfor %}
+        </div>
     </div>
 </section>
